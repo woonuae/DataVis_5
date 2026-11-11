@@ -1,0 +1,74 @@
+/* Storyboard styles – Group 5, COS30045 */
+:root {
+  --bg: #eef0f3;
+  --card: #ffffff;
+  --ink: #1f2328;
+  --muted: #5d6670;
+  --line: #8d96a0;
+  --fill: #8d96a0;
+  --soft: #dde1e6;
+  --highlight: #1f5fbf;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15181c; --card: #1f2328; --ink: #e8eaed; --muted: #a3abb4;
+    --line: #7f8994; --fill: #7f8994; --soft: #2f363d; --highlight: #8db6f2;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.intro { max-width: 1200px; margin: 0 auto; padding: 32px 20px 8px; }
+.intro h1 { margin: 0 0 6px; font-size: 2rem; font-weight: 600; }
+.intro p { margin: 0; max-width: 70ch; color: var(--muted); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+/* Frames run in story order, three per row on desktop */
+.board {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.frame {
+  background: var(--card); border: 1.5px solid var(--line); padding: 14px;
+  display: flex; flex-direction: column;
+}
+.sketch { border: 1.5px dashed var(--line); margin-bottom: 12px; }
+.sketch svg { display: block; width: 100%; height: auto; }
+.frame h2 { margin: 0 0 8px; font-size: 1.05rem; font-weight: 600; }
+
+dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; font-size: 0.88rem; }
+dt { font-weight: 600; color: var(--muted); }
+dd { margin: 0; }
+
+footer { max-width: 1200px; margin: 0 auto; padding: 8px 20px 32px; font-size: 0.85rem; color: var(--muted); }
+
+/* SVG sketch parts */
+.axis { stroke: var(--line); stroke-width: 2; }
+.dash { stroke: var(--line); stroke-dasharray: 4 4; }
+.line { fill: none; stroke: var(--ink); stroke-width: 2.5; }
+.line-thin { fill: none; stroke: var(--line); stroke-width: 2; }
+.fill { fill: var(--fill); }
+.soft { fill: var(--soft); }
+.soft-dark { fill: var(--line); opacity: .5; }
+.box { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.btn-on { fill: var(--soft); stroke: var(--line); stroke-width: 1.5; }
+.tip { fill: var(--card); stroke: var(--ink); stroke-width: 1.5; }
+.point { fill: var(--highlight); }
+.small { font-size: 12px; fill: var(--ink); font-family: inherit; }
+.mini rect { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.mini rect.hl { stroke: var(--highlight); stroke-width: 3; }
+
+/* Tablet and phone */
+@media (max-width: 960px) { .board { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) {
+  .board { grid-template-columns: 1fr; }
+  .intro h1 { font-size: 1.6rem; }
+}
