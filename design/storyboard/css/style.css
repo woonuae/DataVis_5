@@ -8,16 +8,8 @@
   --fill: #8d96a0;
   --soft: #dde1e6;
   --highlight: #1f5fbf;
-  color-scheme: light;
+  color-scheme: light only;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #15181c; --card: #1f2328; --ink: #e8eaed; --muted: #a3abb4;
-    --line: #7f8994; --fill: #7f8994; --soft: #2f363d; --highlight: #8db6f2;
-    color-scheme: dark;
-  }
-}
-
 * { box-sizing: border-box; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);

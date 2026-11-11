@@ -10,16 +10,8 @@
   --note: #1f5fbf;        /* design-note colour */
   --note-bg: #e3edfb;
   --focus: #1f5fbf;
-  color-scheme: light;
+  color-scheme: light only;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #15181c; --page: #1f2328; --ink: #e8eaed; --muted: #a3abb4;
-    --box: #2c3239; --line: #7f8994; --note: #8db6f2; --note-bg: #1d2b40;
-    --focus: #8db6f2; color-scheme: dark;
-  }
-}
-
 * { box-sizing: border-box; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
