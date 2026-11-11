@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe – Hospitalised Road Traffic Injuries in Australia (Group 5)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="toolbar" role="region" aria-label="Wireframe controls">
+  <span><strong>Wireframe v1</strong> – Group 5 (not the real website)</span>
+  <div class="group">
+    <button type="button" id="btn-desktop" aria-pressed="true">Desktop view</button>
+    <button type="button" id="btn-phone" aria-pressed="false">Phone view</button>
+    <button type="button" id="btn-notes" aria-pressed="true">Design notes on</button>
+  </div>
+</div>
+
+<div class="frame">
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Site sections">
+    <span class="site">Road injuries in Australia</span>
+    <ul>
+      <li>Trend</li><li>Road users</li><li>States</li><li>Age &amp; sex</li><li>First Nations</li><li>Takeaways</li>
+    </ul>
+    <span class="menu-icon" aria-hidden="true">☰</span>
+  </nav>
+
+  <!-- Title -->
+  <section>
+    <h1>Hospitalised road traffic injuries in Australia, 2011–2021</h1>
+    <p class="lede">Over 39,000 people were hospitalised after road crashes in 2021. This story follows how that number changed, who was injured, and where.</p>
+    <div class="datanote">Counts are not adjusted for population or travel. Reporting changes in Victoria (2012) and NSW (2017) affect comparisons over time.</div>
+    <span class="note">Design note: one scrolling page, one section per research question. Caveats appear up front so users read every chart with them in mind.</span>
+  </section>
+
+  <!-- Q1 -->
+  <section>
+    <p class="q">Question 1</p>
+    <h2>How did hospitalisations change from 2011 to 2021?</h2>
+    <div class="layout">
+      <div class="text-col">
+        <p class="lede">Counts rose from 34,033 to 39,505, peaked in 2019, then dipped in 2020.</p>
+        <div class="lines"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="chart">
+          <span class="chart-label">Line chart: national count by year</span>
+          <svg viewBox="0 0 600 260" role="img" aria-label="Sketch of a rising line chart with three annotated years">
+            <line x1="40" y1="230" x2="580" y2="230" stroke="currentColor" stroke-width="2"/>
+            <line x1="40" y1="30" x2="40" y2="230" stroke="currentColor" stroke-width="2"/>
+            <polyline fill="none" stroke="currentColor" stroke-width="3"
+              points="40,79 94,79 148,74 202,72 256,65 310,57 364,55 418,54 472,53 526,61 580,54"/>
+            <line x1="94" y1="40" x2="94" y2="230" stroke="currentColor" stroke-dasharray="5 5"/>
+            <line x1="364" y1="40" x2="364" y2="230" stroke="currentColor" stroke-dasharray="5 5"/>
+            <line x1="526" y1="40" x2="526" y2="230" stroke="currentColor" stroke-dasharray="5 5"/>
+          </svg>
+          <div class="controls" style="margin-top:6px">
+            <span class="callout">2012: Vic counting change</span>
+            <span class="callout">2017: NSW counting change</span>
+            <span class="callout">2020: dip (cause not shown by data)</span>
+          </div>
+        </div>
+        <span class="note">Interaction: hover a point to see the year and count. Annotations sit on the chart, not on a separate page. Y-axis starts at zero.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Q2 -->
+  <section>
+    <p class="q">Question 2</p>
+    <h2>Which road users drove the change?</h2>
+    <div class="layout">
+      <div class="text-col">
+        <p class="lede">Pedal cyclists rose the most (+2,772); pedestrians fell (−420).</p>
+        <div class="lines"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="controls" role="group" aria-label="Measure">
+          <span class="ctl on">Change in count</span><span class="ctl">Change in share</span>
+        </div>
+        <div class="chart">
+          <span class="chart-label">Diverging bar chart: change 2011 to 2021</span>
+          <svg viewBox="0 0 600 260" role="img" aria-label="Sketch of a diverging bar chart">
+            <line x1="300" y1="28" x2="300" y2="250" stroke="currentColor" stroke-width="2"/>
+            <rect x="300" y="36" width="240" height="18" fill="currentColor"/>
+            <rect x="300" y="62" width="205" height="18" fill="currentColor"/>
+            <rect x="300" y="88" width="115" height="18" fill="currentColor"/>
+            <rect x="300" y="114" width="20" height="18" fill="currentColor"/>
+            <rect x="270" y="140" width="30" height="18" fill="currentColor" opacity=".55"/>
+            <rect x="250" y="166" width="50" height="18" fill="currentColor" opacity=".55"/>
+            <rect x="215" y="192" width="85" height="18" fill="currentColor" opacity=".55"/>
+            <rect x="190" y="218" width="110" height="18" fill="currentColor" opacity=".55"/>
+          </svg>
+        </div>
+        <span class="note">Interaction: toggle between count and share; hover a bar for exact values. Increases and decreases use two distinct colour-blind-safe colours plus +/− labels.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Q3 -->
+  <section>
+    <p class="q">Question 3</p>
+    <h2>How did each state and territory change?</h2>
+    <p class="lede">Queensland grew most (6,322 to 10,447). NSW fell, partly because of its 2017 counting change.</p>
+    <div class="small-multiples">
+      <div class="chart"><span class="chart-label">NSW</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,20 30,18 55,16 70,38 95,40 115,42"/></svg></div>
+      <div class="chart"><span class="chart-label">Vic</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,35 30,38 55,30 80,24 115,20"/></svg></div>
+      <div class="chart"><span class="chart-label">Qld</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,50 30,44 55,34 80,24 115,10"/></svg></div>
+      <div class="chart"><span class="chart-label">WA</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,30 30,32 55,28 80,30 115,27"/></svg></div>
+      <div class="chart"><span class="chart-label">SA</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,34 30,33 55,30 80,29 115,26"/></svg></div>
+      <div class="chart"><span class="chart-label">Tas</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,44 30,40 55,34 80,28 115,18"/></svg></div>
+      <div class="chart"><span class="chart-label">ACT</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,40 30,38 55,32 80,30 115,24"/></svg></div>
+      <div class="chart"><span class="chart-label">NT</span><svg viewBox="0 0 120 60" aria-hidden="true"><polyline fill="none" stroke="currentColor" stroke-width="2" points="5,42 30,38 55,36 80,26 115,20"/></svg></div>
+    </div>
+    <span class="note">Small multiples: each state gets its own scale so trends can be compared without ranking raw counts across very different populations. Hover highlights a state; NSW and Vic panels carry a counting-change marker.</span>
+  </section>
+
+  <!-- Q4 -->
+  <section>
+    <p class="q">Question 4</p>
+    <h2>Who was hospitalised, by age and sex?</h2>
+    <div class="layout">
+      <div class="text-col">
+        <p class="lede">Males aged 40–64 were the largest group in 2021 (8,702). Older age groups grew.</p>
+        <div class="lines"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="controls" role="group" aria-label="Year">
+          <span class="ctl">2011</span><span class="ctl on">2021</span>
+        </div>
+        <div class="chart">
+          <span class="chart-label">Population pyramid: males left, females right</span>
+          <svg viewBox="0 0 600 250" role="img" aria-label="Sketch of a population pyramid">
+            <line x1="300" y1="28" x2="300" y2="245" stroke="currentColor" stroke-width="2"/>
+            <rect x="285" y="36" width="15" height="22" fill="currentColor"/><rect x="300" y="36" width="10" height="22" fill="currentColor" opacity=".55"/>
+            <rect x="250" y="66" width="50" height="22" fill="currentColor"/><rect x="300" y="66" width="30" height="22" fill="currentColor" opacity=".55"/>
+            <rect x="160" y="96" width="140" height="22" fill="currentColor"/><rect x="300" y="96" width="80" height="22" fill="currentColor" opacity=".55"/>
+            <rect x="140" y="126" width="160" height="22" fill="currentColor"/><rect x="300" y="126" width="90" height="22" fill="currentColor" opacity=".55"/>
+            <rect x="60" y="156" width="240" height="22" fill="currentColor"/><rect x="300" y="156" width="120" height="22" fill="currentColor" opacity=".55"/>
+            <rect x="220" y="186" width="80" height="22" fill="currentColor"/><rect x="300" y="186" width="45" height="22" fill="currentColor" opacity=".55"/>
+            <rect x="240" y="216" width="60" height="22" fill="currentColor"/><rect x="300" y="216" width="50" height="22" fill="currentColor" opacity=".55"/>
+          </svg>
+        </div>
+        <span class="note">Interaction: switch year to compare 2011 and 2021 (bars animate). Note on the chart that age bands have different widths (40–64 spans 25 years). The small intersex/indeterminate category is listed in a footnote, not dropped.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Q5 -->
+  <section>
+    <p class="q">Question 5</p>
+    <h2>Hospitalisations of First Nations Peoples</h2>
+    <p class="lede">Counts rose from 1,150 in 2011 to 2,214 in 2021, peaking at 2,290 in 2020. Motorcyclist hospitalisations rose from 187 to 520.</p>
+    <div class="layout">
+      <div class="chart">
+        <span class="chart-label">Line chart: annual count</span>
+        <svg viewBox="0 0 300 200" role="img" aria-label="Sketch of a line chart">
+          <line x1="20" y1="180" x2="290" y2="180" stroke="currentColor" stroke-width="2"/>
+          <line x1="20" y1="30" x2="20" y2="180" stroke="currentColor" stroke-width="2"/>
+          <polyline fill="none" stroke="currentColor" stroke-width="3" points="20,150 47,140 74,128 101,112 128,100 155,92 182,80 209,76 236,104 263,60 290,66"/>
+        </svg>
+      </div>
+      <div class="chart">
+        <span class="chart-label">100% stacked bars: road-user shares</span>
+        <svg viewBox="0 0 600 200" role="img" aria-label="Sketch of two stacked bars">
+          <text x="10" y="70" fill="currentColor" font-size="16">First Nations</text>
+          <rect x="130" y="50" width="250" height="34" fill="currentColor"/><rect x="380" y="50" width="110" height="34" fill="currentColor" opacity=".6"/><rect x="490" y="50" width="100" height="34" fill="currentColor" opacity=".3"/>
+          <text x="10" y="140" fill="currentColor" font-size="16">National</text>
+          <rect x="130" y="120" width="230" height="34" fill="currentColor"/><rect x="360" y="120" width="90" height="34" fill="currentColor" opacity=".6"/><rect x="450" y="120" width="140" height="34" fill="currentColor" opacity=".3"/>
+        </svg>
+      </div>
+    </div>
+    <div class="datanote">Some small counts are marked “n.p.” (not published) by the source and are shown as gaps, not zeros. Road-user categories were combined to match the national data.</div>
+    <span class="note">Shares (not raw counts) are compared with national data, to avoid implying group-level risk. Wording is descriptive and avoids deficit framing.</span>
+  </section>
+
+  <!-- Takeaways -->
+  <section>
+    <h2>Key takeaways</h2>
+    <div class="takeaways">
+      <div>Takeaway 1 – national trend</div>
+      <div>Takeaway 2 – road users</div>
+      <div>Takeaway 3 – who is affected</div>
+    </div>
+    <div class="datanote">Limitations: counts only (not population-adjusted); reporting breaks in 2012 and 2017; deaths not recorded separately in 2021.</div>
+    <span class="note">Closing section restates the story and its limits, then links to the sources.</span>
+  </section>
+
+  <footer>Data: BITRE Hospitalised Injury (September 2023) and Road Safety Data Hub. Group 5, COS30045.</footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
