@@ -58,7 +58,7 @@ footer { max-width: 1200px; margin: 0 auto; padding: 8px 20px 32px; font-size: 0
 .mini rect { fill: none; stroke: var(--line); stroke-width: 1.5; }
 .mini rect.hl { stroke: var(--highlight); stroke-width: 3; }
 
-/* Tablet and phone */
+/* Narrower browser windows */
 @media (max-width: 960px) { .board { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) {
   .board { grid-template-columns: 1fr; }

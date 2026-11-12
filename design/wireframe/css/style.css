@@ -37,11 +37,9 @@ button { font: inherit; }
 
 /* ---------- The page frame ---------- */
 .frame {
-  container-type: inline-size; container-name: page;
   width: min(1200px, calc(100% - 40px)); margin: 24px auto 48px;
   background: var(--page); border: 1px solid var(--line);
 }
-body.phone .frame { width: 390px; border-radius: 28px; border-width: 8px; overflow: hidden; }
 
 /* ---------- Wireframe elements ---------- */
 .navbar {
@@ -50,7 +48,6 @@ body.phone .frame { width: 390px; border-radius: 28px; border-width: 8px; overfl
 }
 .navbar .site { font-weight: 600; }
 .navbar ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; color: var(--muted); }
-.menu-icon { display: none; font-size: 22px; }
 
 section { padding: 40px 28px; border-bottom: 1px dashed var(--line); }
 section:last-of-type { border-bottom: 0; }
@@ -101,16 +98,4 @@ body.hide-notes .note { display: none; }
 .takeaways div { border: 1.5px solid var(--line); padding: 14px; min-height: 90px; font-size: 0.9rem; }
 footer { padding: 18px 28px; font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); }
 
-/* ---------- Phone layout (also used when the real window is narrow) ---------- */
-@container page (max-width: 640px) {
-  .navbar { padding: 12px 16px; }
-  .navbar ul { display: none; }
-  .menu-icon { display: block; }
-  section { padding: 28px 16px; }
-  h1 { font-size: 1.9rem; }
-  .layout { grid-template-columns: 1fr; }
-  .small-multiples { grid-template-columns: repeat(2, 1fr); }
-  .takeaways { grid-template-columns: 1fr; }
-  footer { padding: 16px; }
-}
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
