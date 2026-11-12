@@ -1,0 +1,177 @@
+year,group,road_user,hospitalisations,share_percent,not_published
+2011,First Nations,Bus occupant,,,yes
+2011,National,Bus occupant,214,0.63,no
+2011,First Nations,"Car driver, passenger or unknown position",617,53.65,no
+2011,National,"Car driver, passenger or unknown position",16690,49.04,no
+2011,First Nations,"Heavy transport driver, passenger or unknown position",11,0.96,yes
+2011,National,"Heavy transport driver, passenger or unknown position",562,1.65,no
+2011,First Nations,Motorcyclist,187,16.26,no
+2011,National,Motorcyclist,7565,22.23,no
+2011,First Nations,Other or unknown,34,2.96,no
+2011,National,Other or unknown,610,1.79,no
+2011,First Nations,Pedal cyclist,121,10.52,no
+2011,National,Pedal cyclist,5391,15.84,no
+2011,First Nations,Pedestrian,180,15.65,no
+2011,National,Pedestrian,2754,8.09,no
+2011,First Nations,Pick-up truck or van occupant,,,yes
+2011,National,Pick-up truck or van occupant,247,0.73,no
+2012,First Nations,Bus occupant,5,0.36,yes
+2012,National,Bus occupant,217,0.64,no
+2012,First Nations,"Car driver, passenger or unknown position",758,54.3,no
+2012,National,"Car driver, passenger or unknown position",16439,48.32,no
+2012,First Nations,"Heavy transport driver, passenger or unknown position",5,0.36,yes
+2012,National,"Heavy transport driver, passenger or unknown position",511,1.5,no
+2012,First Nations,Motorcyclist,218,15.62,no
+2012,National,Motorcyclist,7728,22.71,no
+2012,First Nations,Other or unknown,30,2.15,no
+2012,National,Other or unknown,563,1.65,no
+2012,First Nations,Pedal cyclist,152,10.89,no
+2012,National,Pedal cyclist,5621,16.52,no
+2012,First Nations,Pedestrian,219,15.69,no
+2012,National,Pedestrian,2672,7.85,no
+2012,First Nations,Pick-up truck or van occupant,9,0.64,yes
+2012,National,Pick-up truck or van occupant,273,0.8,no
+2013,First Nations,Bus occupant,,,yes
+2013,National,Bus occupant,226,0.65,no
+2013,First Nations,"Car driver, passenger or unknown position",755,53.85,no
+2013,National,"Car driver, passenger or unknown position",16588,47.39,no
+2013,First Nations,"Heavy transport driver, passenger or unknown position",10,0.71,yes
+2013,National,"Heavy transport driver, passenger or unknown position",484,1.38,no
+2013,First Nations,Motorcyclist,267,19.04,no
+2013,National,Motorcyclist,8018,22.91,no
+2013,First Nations,Other or unknown,25,1.78,no
+2013,National,Other or unknown,536,1.53,no
+2013,First Nations,Pedal cyclist,173,12.34,no
+2013,National,Pedal cyclist,6262,17.89,no
+2013,First Nations,Pedestrian,166,11.84,no
+2013,National,Pedestrian,2657,7.59,no
+2013,First Nations,Pick-up truck or van occupant,6,0.43,yes
+2013,National,Pick-up truck or van occupant,230,0.66,no
+2014,First Nations,Bus occupant,,,yes
+2014,National,Bus occupant,289,0.81,no
+2014,First Nations,"Car driver, passenger or unknown position",759,52.74,no
+2014,National,"Car driver, passenger or unknown position",16475,46.39,no
+2014,First Nations,"Heavy transport driver, passenger or unknown position",15,1.04,no
+2014,National,"Heavy transport driver, passenger or unknown position",480,1.35,no
+2014,First Nations,Motorcyclist,254,17.65,no
+2014,National,Motorcyclist,8334,23.47,no
+2014,First Nations,Other or unknown,38,2.64,no
+2014,National,Other or unknown,508,1.43,no
+2014,First Nations,Pedal cyclist,177,12.3,no
+2014,National,Pedal cyclist,6636,18.69,no
+2014,First Nations,Pedestrian,196,13.62,no
+2014,National,Pedestrian,2554,7.19,no
+2014,First Nations,Pick-up truck or van occupant,,,yes
+2014,National,Pick-up truck or van occupant,239,0.67,no
+2015,First Nations,Bus occupant,6,0.38,yes
+2015,National,Bus occupant,246,0.66,no
+2015,First Nations,"Car driver, passenger or unknown position",883,55.4,no
+2015,National,"Car driver, passenger or unknown position",17933,48.36,no
+2015,First Nations,"Heavy transport driver, passenger or unknown position",15,0.94,no
+2015,National,"Heavy transport driver, passenger or unknown position",510,1.38,no
+2015,First Nations,Motorcyclist,273,17.13,no
+2015,National,Motorcyclist,8298,22.38,no
+2015,First Nations,Other or unknown,28,1.76,no
+2015,National,Other or unknown,503,1.36,no
+2015,First Nations,Pedal cyclist,177,11.1,no
+2015,National,Pedal cyclist,6716,18.11,no
+2015,First Nations,Pedestrian,206,12.92,no
+2015,National,Pedestrian,2627,7.08,no
+2015,First Nations,Pick-up truck or van occupant,6,0.38,yes
+2015,National,Pick-up truck or van occupant,249,0.67,no
+2016,First Nations,Bus occupant,9,0.54,yes
+2016,National,Bus occupant,283,0.73,no
+2016,First Nations,"Car driver, passenger or unknown position",928,56.0,no
+2016,National,"Car driver, passenger or unknown position",19105,49.03,no
+2016,First Nations,"Heavy transport driver, passenger or unknown position",14,0.84,no
+2016,National,"Heavy transport driver, passenger or unknown position",484,1.24,no
+2016,First Nations,Motorcyclist,296,17.86,no
+2016,National,Motorcyclist,8526,21.88,no
+2016,First Nations,Other or unknown,25,1.51,no
+2016,National,Other or unknown,620,1.59,no
+2016,First Nations,Pedal cyclist,190,11.47,no
+2016,National,Pedal cyclist,6904,17.72,no
+2016,First Nations,Pedestrian,190,11.47,no
+2016,National,Pedestrian,2743,7.04,no
+2016,First Nations,Pick-up truck or van occupant,5,0.3,yes
+2016,National,Pick-up truck or van occupant,298,0.76,no
+2017,First Nations,Bus occupant,,,yes
+2017,National,Bus occupant,265,0.67,no
+2017,First Nations,"Car driver, passenger or unknown position",938,54.63,no
+2017,National,"Car driver, passenger or unknown position",19146,48.67,no
+2017,First Nations,"Heavy transport driver, passenger or unknown position",15,0.87,no
+2017,National,"Heavy transport driver, passenger or unknown position",528,1.34,no
+2017,First Nations,Motorcyclist,319,18.58,no
+2017,National,Motorcyclist,8739,22.21,no
+2017,First Nations,Other or unknown,35,2.04,no
+2017,National,Other or unknown,600,1.53,no
+2017,First Nations,Pedal cyclist,201,11.71,no
+2017,National,Pedal cyclist,7076,17.99,no
+2017,First Nations,Pedestrian,209,12.17,no
+2017,National,Pedestrian,2714,6.9,no
+2017,First Nations,Pick-up truck or van occupant,,,yes
+2017,National,Pick-up truck or van occupant,271,0.69,no
+2018,First Nations,Bus occupant,6,0.31,yes
+2018,National,Bus occupant,247,0.62,no
+2018,First Nations,"Car driver, passenger or unknown position",1113,57.85,no
+2018,National,"Car driver, passenger or unknown position",19665,49.67,no
+2018,First Nations,"Heavy transport driver, passenger or unknown position",20,1.04,no
+2018,National,"Heavy transport driver, passenger or unknown position",553,1.4,no
+2018,First Nations,Motorcyclist,333,17.31,no
+2018,National,Motorcyclist,8623,21.78,no
+2018,First Nations,Other or unknown,37,1.92,no
+2018,National,Other or unknown,603,1.52,no
+2018,First Nations,Pedal cyclist,199,10.34,no
+2018,National,Pedal cyclist,6959,17.58,no
+2018,First Nations,Pedestrian,209,10.86,no
+2018,National,Pedestrian,2661,6.72,no
+2018,First Nations,Pick-up truck or van occupant,7,0.36,yes
+2018,National,Pick-up truck or van occupant,279,0.7,no
+2019,First Nations,Bus occupant,,,yes
+2019,National,Bus occupant,255,0.64,no
+2019,First Nations,"Car driver, passenger or unknown position",996,54.34,no
+2019,National,"Car driver, passenger or unknown position",19268,48.33,no
+2019,First Nations,"Heavy transport driver, passenger or unknown position",12,0.65,yes
+2019,National,"Heavy transport driver, passenger or unknown position",524,1.31,no
+2019,First Nations,Motorcyclist,353,19.26,no
+2019,National,Motorcyclist,8924,22.38,no
+2019,First Nations,Other or unknown,10,0.55,yes
+2019,National,Other or unknown,620,1.56,no
+2019,First Nations,Pedal cyclist,240,13.09,no
+2019,National,Pedal cyclist,7302,18.32,no
+2019,First Nations,Pedestrian,211,11.51,no
+2019,National,Pedestrian,2713,6.81,no
+2019,First Nations,Pick-up truck or van occupant,11,0.6,no
+2019,National,Pick-up truck or van occupant,260,0.65,no
+2020,First Nations,Bus occupant,10,0.44,no
+2020,National,Bus occupant,173,0.46,no
+2020,First Nations,"Car driver, passenger or unknown position",1208,52.75,no
+2020,National,"Car driver, passenger or unknown position",17292,45.55,no
+2020,First Nations,"Heavy transport driver, passenger or unknown position",10,0.44,no
+2020,National,"Heavy transport driver, passenger or unknown position",500,1.32,no
+2020,First Nations,Motorcyclist,545,23.8,no
+2020,National,Motorcyclist,8684,22.87,no
+2020,First Nations,Other or unknown,45,1.97,no
+2020,National,Other or unknown,582,1.53,no
+2020,First Nations,Pedal cyclist,230,10.04,no
+2020,National,Pedal cyclist,8332,21.95,no
+2020,First Nations,Pedestrian,223,9.74,no
+2020,National,Pedestrian,2103,5.54,no
+2020,First Nations,Pick-up truck or van occupant,19,0.83,no
+2020,National,Pick-up truck or van occupant,300,0.79,no
+2021,First Nations,Bus occupant,7,0.32,yes
+2021,National,Bus occupant,169,0.43,no
+2021,First Nations,"Car driver, passenger or unknown position",1158,52.3,no
+2021,National,"Car driver, passenger or unknown position",18539,46.93,no
+2021,First Nations,"Heavy transport driver, passenger or unknown position",7,0.32,yes
+2021,National,"Heavy transport driver, passenger or unknown position",475,1.2,no
+2021,First Nations,Motorcyclist,520,23.49,no
+2021,National,Motorcyclist,8883,22.49,no
+2021,First Nations,Other or unknown,52,2.35,no
+2021,National,Other or unknown,601,1.52,no
+2021,First Nations,Pedal cyclist,207,9.35,no
+2021,National,Pedal cyclist,8163,20.66,no
+2021,First Nations,Pedestrian,235,10.61,no
+2021,National,Pedestrian,2334,5.91,no
+2021,First Nations,Pick-up truck or van occupant,28,1.26,no
+2021,National,Pick-up truck or van occupant,341,0.86,no

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospitalised Road Traffic Injuries in Australia, 2011–2021</title>
+  <meta name="description" content="An interactive data story about hospitalised road traffic injuries in Australia, 2011–2021. COS30045 Group 5.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Story sections">
+    <a class="brand" href="#top">Road injuries in Australia</a>
+    <ul>
+      <li><a href="#trend">Trend</a></li>
+      <li><a href="#road-users">Road users</a></li>
+      <li><a href="#states">States</a></li>
+      <li><a href="#age-sex">Age &amp; sex</a></li>
+      <li><a href="#first-nations">First Nations</a></li>
+      <li><a href="#takeaways">Takeaways</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+
+    <!-- Title -->
+    <header class="hero" id="top">
+      <p class="eyebrow">Hospitalised road traffic injuries · Australia · 2011–2021</p>
+      <h1>Every year, tens of thousands of Australians end up in hospital after a road crash.</h1>
+      <p class="lede">In 2021, 39,505 people were admitted to hospital with injuries from road traffic crashes, up from 34,033 in 2011. Road deaths get most of the attention, but non-fatal injuries affect far more people. This story looks at how that number changed, who was hurt, and where.</p>
+      <aside class="caveat" aria-label="How to read these charts">
+        <h2>How to read these charts</h2>
+        <ul>
+          <li><strong>Counts, not rates.</strong> The figures are numbers of hospitalisations. They are not adjusted for population size or how much people travel, so bigger states and groups will naturally have more.</li>
+          <li><strong>Counting rules changed.</strong> Victoria (from July 2012) and NSW (from June 2017) stopped counting patients treated only in emergency departments, which lowered their counts.</li>
+          <li><strong>A hospitalisation is not a crash.</strong> One crash can lead to several hospitalisations, and injuries that don't need a hospital admission aren't counted.</li>
+        </ul>
+      </aside>
+    </header>
+
+    <!-- Q1 -->
+    <section class="story-section" id="trend" aria-labelledby="trend-title">
+      <p class="q-label">Question 1 · National trend</p>
+      <h2 id="trend-title">How did hospitalisations change from 2011 to 2021?</h2>
+      <p class="finding">Hospitalisations rose by 16% over the decade, peaked at 39,866 in 2019, then fell in 2020 before rising again.</p>
+      <p class="explain">The overall rise is steady but not continuous. Some of the pattern reflects counting changes rather than road safety: the drop in Victoria's counts after 2012 and in NSW's after 2017 make the national total look lower than it would otherwise be. The dip in 2020 coincides with the COVID-19 period, but these data alone can't show the cause.</p>
+      <figure class="chart-card">
+        <div id="chart-trend" class="chart"></div>
+        <figcaption>Number of road traffic hospitalisations in Australia, 2011–2021. Hover or tab to each point for exact values. Note: deaths in hospital are not separated out for 2021, so the 2021 count includes about 200 cases that earlier years exclude.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Q2 -->
+    <section class="story-section" id="road-users" aria-labelledby="road-title">
+      <p class="q-label">Question 2 · Road users</p>
+      <h2 id="road-title">Which road users drove the change?</h2>
+      <p class="finding">Pedal cyclists had the biggest increase (+2,772 hospitalisations), followed by car drivers and motorcyclists. Pedestrian hospitalisations fell.</p>
+      <p class="explain">Switch to <em>change in share</em> to see which groups became a larger or smaller part of all road traffic hospitalisations. A group can grow in number while shrinking as a share, because the total also grew.</p>
+      <div class="controls" role="group" aria-label="Measure shown">
+        <button type="button" class="toggle" data-measure="count" aria-pressed="true">Change in count</button>
+        <button type="button" class="toggle" data-measure="share" aria-pressed="false">Change in share</button>
+      </div>
+      <figure class="chart-card">
+        <div id="chart-road-users" class="chart"></div>
+        <figcaption>Change in road traffic hospitalisations by road user, 2011 to 2021. <span class="swatch up" aria-hidden="true"></span>Increase <span class="swatch down" aria-hidden="true"></span>Decrease</figcaption>
+      </figure>
+    </section>
+
+    <!-- Q3 -->
+    <section class="story-section" id="states" aria-labelledby="states-title">
+      <p class="q-label">Question 3 · States and territories</p>
+      <h2 id="states-title">How did each state and territory change?</h2>
+      <p class="finding">Queensland had the largest rise, from 6,322 in 2011 to 10,447 in 2021. NSW was the only jurisdiction lower in 2021 than in 2011, partly because of its 2017 counting change.</p>
+      <p class="explain">Each panel has its own vertical scale, starting at zero, so you can compare the <em>shape</em> of each trend. Don't compare the heights of lines between panels: NSW and the Northern Territory have very different populations, and these are raw counts.</p>
+      <div id="chart-states" class="small-multiples" aria-label="Hospitalisations by state and territory, 2011–2021"></div>
+      <p class="note">Dashed lines mark counting changes: Victoria (2012) and NSW (2017). Hover or tab to a panel to compare its 2011 and 2021 counts.</p>
+    </section>
+
+    <!-- Q4 -->
+    <section class="story-section" id="age-sex" aria-labelledby="age-title">
+      <p class="q-label">Question 4 · Age and sex</p>
+      <h2 id="age-title">Who was hospitalised, by age and sex?</h2>
+      <p class="finding">Almost twice as many males as females were hospitalised. Males aged 40–64 were the largest group in 2021 (8,702), and hospitalisations among older Australians grew.</p>
+      <p class="explain">Switch between 2011 and 2021 to see how the age profile shifted. The age bands are different widths: 40–64 covers 25 years while 17–25 covers 9, so wider bands naturally contain more people.</p>
+      <div class="controls" role="group" aria-label="Year shown">
+        <button type="button" class="toggle" data-year="2011" aria-pressed="false">2011</button>
+        <button type="button" class="toggle" data-year="2021" aria-pressed="true">2021</button>
+      </div>
+      <figure class="chart-card">
+        <div id="chart-age-sex" class="chart"></div>
+        <figcaption>Road traffic hospitalisations by age group and sex. <span class="swatch male" aria-hidden="true"></span>Male <span class="swatch female" aria-hidden="true"></span>Female <span id="age-footnote"></span></figcaption>
+      </figure>
+    </section>
+
+    <!-- Q5 -->
+    <section class="story-section" id="first-nations" aria-labelledby="fn-title">
+      <p class="q-label">Question 5 · First Nations Peoples</p>
+      <h2 id="fn-title">Hospitalisations of First Nations Peoples</h2>
+      <p class="finding">Hospitalisations of First Nations Peoples rose from 1,150 in 2011 to 2,214 in 2021, with a peak of 2,290 in 2020. Motorcyclists grew from 16% to 23% of these hospitalisations.</p>
+      <p class="explain">The right-hand chart compares the mix of road users with the national mix, as percentages rather than counts. Road-user groups were combined in the national data to match the First Nations categories. These are descriptive patterns; the data don't explain why they occur.</p>
+      <div class="two-col">
+        <figure class="chart-card">
+          <div id="chart-fn-trend" class="chart"></div>
+          <figcaption>Road traffic hospitalisations of First Nations Peoples, 2011–2021.</figcaption>
+        </figure>
+        <figure class="chart-card">
+          <div class="controls" role="group" aria-label="Year shown">
+            <button type="button" class="toggle" data-fn-year="2011" aria-pressed="false">2011</button>
+            <button type="button" class="toggle" data-fn-year="2021" aria-pressed="true">2021</button>
+          </div>
+          <div id="chart-fn-shares" class="chart"></div>
+          <figcaption>Share of hospitalisations by road user, First Nations Peoples and all Australians. <span id="fn-np-note"></span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Takeaways -->
+    <section class="story-section" id="takeaways" aria-labelledby="take-title">
+      <h2 id="take-title">Key takeaways</h2>
+      <div class="takeaways">
+        <article>
+          <h3>A growing burden</h3>
+          <p>Road traffic hospitalisations rose 16% between 2011 and 2021, from 34,033 to 39,505, despite counting changes that lowered the numbers in two states.</p>
+        </article>
+        <article>
+          <h3>Cyclists and drivers</h3>
+          <p>Pedal cyclists, car drivers and motorcyclists account for most of the increase. Pedestrian hospitalisations fell.</p>
+        </article>
+        <article>
+          <h3>Who is affected</h3>
+          <p>About two in three hospitalisations are males. People aged 40–64 and over 65 make up a growing share, and motorcyclists are a larger share of First Nations hospitalisations.</p>
+        </article>
+      </div>
+      <aside class="caveat">
+        <h3>What these data can't tell us</h3>
+        <ul>
+          <li>Risk: the counts are not adjusted for population or travel, so they don't show who is most at risk per person or per kilometre.</li>
+          <li>Causes: the data describe patterns, not why they happened.</li>
+          <li>Severity: a hospitalisation can be a short stay or a long one; this story counts them equally.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Data sources:</strong>
+      <a href="https://www.bitre.gov.au/publications/ongoing/hospitalised-injury" target="_blank" rel="noopener">BITRE Hospitalised Injury, September 2023 release</a> ·
+      <a href="https://datahub.roadsafety.gov.au/progress-reporting/hospitalised-injuries" target="_blank" rel="noopener">Road Safety Data Hub</a>.
+      Data processed in KNIME by the team.
+    </p>
+    <p>COS30045 Data Visualisation · Group 5 · Swinburne University of Technology, 2026.</p>
+  </footer>
+
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite" hidden></div>
+
+  <!-- D3 v7, pinned version -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/q1-trend.js"></script>
+  <script src="js/q2-road-users.js"></script>
+  <script src="js/q3-states.js"></script>
+  <script src="js/q4-age-sex.js"></script>
+  <script src="js/q5-first-nations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
