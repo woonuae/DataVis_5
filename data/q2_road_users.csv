@@ -1,0 +1,133 @@
+year,road_user,hospitalisations,share_percent
+2011,Bus occupant,214,0.63
+2011,Car driver,10948,32.17
+2011,Car passenger,4853,14.26
+2011,Car unknown position,889,2.61
+2011,Heavy transport driver,455,1.34
+2011,Heavy transport passenger,52,0.15
+2011,Heavy transport unknown position,55,0.16
+2011,Motorcyclist,7565,22.23
+2011,Other or unknown,610,1.79
+2011,Pedal cyclist,5391,15.84
+2011,Pedestrian,2754,8.09
+2011,Pick-up truck or van occupant,247,0.73
+2012,Bus occupant,217,0.64
+2012,Car driver,10806,31.76
+2012,Car passenger,4738,13.93
+2012,Car unknown position,895,2.63
+2012,Heavy transport driver,416,1.22
+2012,Heavy transport passenger,47,0.14
+2012,Heavy transport unknown position,48,0.14
+2012,Motorcyclist,7728,22.71
+2012,Other or unknown,563,1.65
+2012,Pedal cyclist,5621,16.52
+2012,Pedestrian,2672,7.85
+2012,Pick-up truck or van occupant,273,0.8
+2013,Bus occupant,226,0.65
+2013,Car driver,10942,31.26
+2013,Car passenger,4828,13.79
+2013,Car unknown position,818,2.34
+2013,Heavy transport driver,415,1.19
+2013,Heavy transport passenger,40,0.11
+2013,Heavy transport unknown position,29,0.08
+2013,Motorcyclist,8018,22.91
+2013,Other or unknown,536,1.53
+2013,Pedal cyclist,6262,17.89
+2013,Pedestrian,2657,7.59
+2013,Pick-up truck or van occupant,230,0.66
+2014,Bus occupant,289,0.81
+2014,Car driver,11122,31.32
+2014,Car passenger,4625,13.02
+2014,Car unknown position,728,2.05
+2014,Heavy transport driver,377,1.06
+2014,Heavy transport passenger,55,0.15
+2014,Heavy transport unknown position,48,0.14
+2014,Motorcyclist,8334,23.47
+2014,Other or unknown,508,1.43
+2014,Pedal cyclist,6636,18.69
+2014,Pedestrian,2554,7.19
+2014,Pick-up truck or van occupant,239,0.67
+2015,Bus occupant,246,0.66
+2015,Car driver,12163,32.8
+2015,Car passenger,4958,13.37
+2015,Car unknown position,812,2.19
+2015,Heavy transport driver,444,1.2
+2015,Heavy transport passenger,43,0.12
+2015,Heavy transport unknown position,23,0.06
+2015,Motorcyclist,8298,22.38
+2015,Other or unknown,503,1.36
+2015,Pedal cyclist,6716,18.11
+2015,Pedestrian,2627,7.08
+2015,Pick-up truck or van occupant,249,0.67
+2016,Bus occupant,283,0.73
+2016,Car driver,13194,33.86
+2016,Car passenger,5103,13.1
+2016,Car unknown position,808,2.07
+2016,Heavy transport driver,403,1.03
+2016,Heavy transport passenger,42,0.11
+2016,Heavy transport unknown position,39,0.1
+2016,Motorcyclist,8526,21.88
+2016,Other or unknown,620,1.59
+2016,Pedal cyclist,6904,17.72
+2016,Pedestrian,2743,7.04
+2016,Pick-up truck or van occupant,298,0.76
+2017,Bus occupant,265,0.67
+2017,Car driver,13267,33.72
+2017,Car passenger,5102,12.97
+2017,Car unknown position,777,1.98
+2017,Heavy transport driver,447,1.14
+2017,Heavy transport passenger,49,0.12
+2017,Heavy transport unknown position,32,0.08
+2017,Motorcyclist,8739,22.21
+2017,Other or unknown,600,1.53
+2017,Pedal cyclist,7076,17.99
+2017,Pedestrian,2714,6.9
+2017,Pick-up truck or van occupant,271,0.69
+2018,Bus occupant,247,0.62
+2018,Car driver,13595,34.34
+2018,Car passenger,5206,13.15
+2018,Car unknown position,864,2.18
+2018,Heavy transport driver,437,1.1
+2018,Heavy transport passenger,69,0.17
+2018,Heavy transport unknown position,47,0.12
+2018,Motorcyclist,8623,21.78
+2018,Other or unknown,603,1.52
+2018,Pedal cyclist,6959,17.58
+2018,Pedestrian,2661,6.72
+2018,Pick-up truck or van occupant,279,0.7
+2019,Bus occupant,255,0.64
+2019,Car driver,13482,33.82
+2019,Car passenger,4989,12.51
+2019,Car unknown position,797,2.0
+2019,Heavy transport driver,425,1.07
+2019,Heavy transport passenger,52,0.13
+2019,Heavy transport unknown position,47,0.12
+2019,Motorcyclist,8924,22.38
+2019,Other or unknown,620,1.56
+2019,Pedal cyclist,7302,18.32
+2019,Pedestrian,2713,6.81
+2019,Pick-up truck or van occupant,260,0.65
+2020,Bus occupant,173,0.46
+2020,Car driver,12217,32.18
+2020,Car passenger,4344,11.44
+2020,Car unknown position,731,1.93
+2020,Heavy transport driver,412,1.09
+2020,Heavy transport passenger,48,0.13
+2020,Heavy transport unknown position,40,0.11
+2020,Motorcyclist,8684,22.87
+2020,Other or unknown,582,1.53
+2020,Pedal cyclist,8332,21.95
+2020,Pedestrian,2103,5.54
+2020,Pick-up truck or van occupant,300,0.79
+2021,Bus occupant,169,0.43
+2021,Car driver,13327,33.73
+2021,Car passenger,4495,11.38
+2021,Car unknown position,717,1.81
+2021,Heavy transport driver,383,0.97
+2021,Heavy transport passenger,56,0.14
+2021,Heavy transport unknown position,36,0.09
+2021,Motorcyclist,8883,22.49
+2021,Other or unknown,601,1.52
+2021,Pedal cyclist,8163,20.66
+2021,Pedestrian,2334,5.91
+2021,Pick-up truck or van occupant,341,0.86
