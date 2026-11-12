@@ -42,7 +42,8 @@ Promise.all([
   .catch((error) => {
     console.error(error);
     d3.selectAll(".chart, .small-multiples").append("p").attr("class", "note")
-      .text("The chart data could not be loaded. If you opened this file directly, run it with a local server (for example, VS Code Live Server).");
+      .text("The chart data could not be loaded. Details: " + error.message +
+            " | Page address: " + window.location.href);
   });
 
 /* ---------- Highlight the current section in the navigation ---------- */
