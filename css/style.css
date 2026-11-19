@@ -76,7 +76,7 @@ a { color: var(--c-male); }
 .site-nav {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -615,4 +615,27 @@ main {
   .takeaways { gap: 14px; }
 
   .site-footer { padding: 24px 16px 32px; }
+}
+
+/* Q4: Compact age and sex tooltip */
+#tooltip:has(.q4-tooltip) {
+  width: max-content;
+  max-width: 220px;
+  padding: 12px 15px;
+  font-size: 13px;
+  line-height: 1.45;
+  box-sizing: border-box;
+}
+
+.q4-tooltip-values {
+  margin-top: 8px;
+}
+
+.q4-tooltip-difference {
+  margin-top: 10px;
+}
+
+.q4-tooltip-share {
+  margin-top: 10px;
+  font-size: 12px;
 }
