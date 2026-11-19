@@ -1,0 +1,13 @@
+"Road user","2011+Sum(Sum(Hospitalisations))","2012+Sum(Sum(Hospitalisations))","2013+Sum(Sum(Hospitalisations))","2014+Sum(Sum(Hospitalisations))","2015+Sum(Sum(Hospitalisations))","2016+Sum(Sum(Hospitalisations))","2017+Sum(Sum(Hospitalisations))","2018+Sum(Sum(Hospitalisations))","2019+Sum(Sum(Hospitalisations))","2020+Sum(Sum(Hospitalisations))","2021+Sum(Sum(Hospitalisations))","Difference_2021_vs_2011"
+"Bus occupant",214,217,226,289,246,283,265,247,255,173,169,-45
+"Car driver",10948,10806,10942,11122,12163,13194,13267,13595,13482,12217,13327,2379
+"Car passenger",4853,4738,4828,4625,4958,5103,5102,5206,4989,4344,4495,-358
+"Car unknown position",889,895,818,728,812,808,777,864,797,731,717,-172
+"Heavy transport driver",455,416,415,377,444,403,447,437,425,412,383,-72
+"Heavy transport passenger",52,47,40,55,43,42,49,69,52,48,56,4
+"Heavy transport unknown position",55,48,29,48,23,39,32,47,47,40,36,-19
+"Motorcyclist",7565,7728,8018,8334,8298,8526,8739,8623,8924,8684,8883,1318
+"Other or unknown",610,563,536,508,503,620,600,603,620,582,601,-9
+"Pedal cyclist",5391,5621,6262,6636,6716,6904,7076,6959,7302,8332,8163,2772
+"Pedestrian",2754,2672,2657,2554,2627,2743,2714,2661,2713,2103,2334,-420
+"Pick-up truck or van occupant",247,273,230,239,249,298,271,279,260,300,341,94
