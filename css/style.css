@@ -639,3 +639,248 @@ main {
   margin-top: 10px;
   font-size: 12px;
 }
+
+
+/* =========================================================
+   Q3: Visualisation toggle
+   ========================================================= */
+
+.q3-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.q3-view-btn {
+  padding: 9px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.q3-view-btn:hover {
+  background: rgba(100, 100, 100, 0.1);
+}
+
+.q3-view-btn.active {
+  background: #263b59;
+  color: white;
+  border-color: #263b59;
+}
+
+.q3-view-btn:focus-visible {
+  outline: 3px solid #7da7df;
+  outline-offset: 3px;
+}
+
+.q3-description {
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted, #666);
+}
+
+
+/* =========================================================
+   Q3 – STATES AND TERRITORIES
+   Toggle, line chart grid and heatmap styling
+   ========================================================= */
+
+/* Override the original small-multiples layout on Q3
+   so controls and description do not become grid items. */
+
+#chart-states.small-multiples {
+  display: block !important;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Toggle buttons */
+
+#chart-states .q3-controls {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin: 22px 0 18px;
+}
+
+#chart-states .q3-view-btn {
+  display: inline-flex !important;
+  flex: 0 0 auto !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 125px;
+  min-height: 46px;
+  padding: 10px 22px;
+  border: 1px solid #ded3ef;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #35145b;
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+#chart-states .q3-view-btn:hover {
+  border-color: #7138c8;
+  background: #f5efff;
+}
+
+#chart-states .q3-view-btn.active {
+  background: #293e60;
+  border-color: #293e60;
+  color: #ffffff;
+}
+
+#chart-states .q3-view-btn:focus-visible {
+  outline: 3px solid #a77beb;
+  outline-offset: 3px;
+}
+
+/* Description */
+
+#chart-states .q3-description {
+  display: block;
+  width: 100%;
+  margin: 0 0 22px;
+  color: #766987;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Visualisation area */
+
+#chart-states #q3-visualisation {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Line chart panels */
+
+#chart-states #q3-visualisation .q3-panel {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+#chart-states #q3-visualisation .q3-panel h3 {
+  margin: 0 0 5px;
+}
+
+#chart-states #q3-visualisation .q3-panel .panel-sub {
+  margin: 0 0 10px;
+}
+
+#chart-states #q3-visualisation .q3-panel svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* Heatmap takes the full width */
+
+#chart-states #q3-visualisation:has(.q3-heatmap) {
+  display: block !important;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#chart-states .q3-heatmap {
+  display: block;
+  width: 100%;
+  min-width: 720px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Heatmap labels */
+
+#chart-states .heatmap-year,
+#chart-states .heatmap-state,
+#chart-states .heatmap-legend-label,
+#chart-states .heatmap-legend-title {
+  fill: #5d4775;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+#chart-states .heatmap-year {
+  font-size: 11px;
+}
+
+#chart-states .heatmap-cell {
+  cursor: pointer;
+  stroke: #ffffff;
+  stroke-width: 1.5px;
+  transition: stroke 0.15s, stroke-width 0.15s;
+}
+
+#chart-states .heatmap-cell:hover,
+#chart-states .heatmap-cell.heatmap-active,
+#chart-states .heatmap-cell:focus {
+  stroke: #35145b;
+  stroke-width: 3px;
+  outline: none;
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+  #chart-states #q3-visualisation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  #chart-states #q3-visualisation .q3-panel {
+    padding: 12px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  #chart-states #q3-visualisation {
+    grid-template-columns: 1fr;
+  }
+
+  #chart-states .q3-heatmap {
+    min-width: 850px;
+  }
+
+  #chart-states .q3-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Q3 heatmap: values displayed inside cells */
+
+#chart-states .heatmap-value {
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+  user-select: none;
+}
+
